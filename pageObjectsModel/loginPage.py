@@ -1,0 +1,23 @@
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+from utils.common_utils import webdriver_wait
+from constants.constants import Constants
+
+class LoginPage:
+    def __init__(self, driver):
+        self.driver = driver
+        self.username = (By.NAME, "username")
+        self.password = (By.NAME, "password")
+        self.login_button = (By.XPATH, "//button[@type='submit']")
+
+    def login(self, username, password):
+        self.driver.get(Constants.ORANGEHRM_URL)
+        WebDriverWait(self.driver, 10).until(
+            EC.visibility_of_element_located(self.username)
+        )
+        self.driver.find_element(*self.username).send_keys(username)
+        self.driver.find_element(*self.password).send_keys(password)
+        self.driver.find_element(*self.login_button).click()
+        webdriver_wait(self.driver, (By.XPATH, "//h6[text()='Dashboard']"))
