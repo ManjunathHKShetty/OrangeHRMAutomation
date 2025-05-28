@@ -15,12 +15,10 @@ class PIMPage:
         self.row_locator = (By.XPATH, "//div[@role='rowgroup']/div[@role='row']")
 
     def navigate_to_pim(self):
-        """Clicks on the PIM module before proceeding."""
         WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(self.pim_menu)).click()
 
     def add_employee(self, first_name, last_name):
-        """Navigates to PIM, clicks 'Add Employee', and fills in the details."""
-        self.navigate_to_pim()  # First, click PIM
+        self.navigate_to_pim()
         WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(self.add_employee_button)).click()
 
         WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(self.first_name)).send_keys(first_name)
@@ -28,18 +26,13 @@ class PIMPage:
         WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(self.save_button)).click()
 
     def navigate_to_employee_list(self):
-        """Navigates to Employee List page and ensures the table is visible."""
         WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable(self.employee_list_button)).click()
         WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located(self.employee_list_table))
-
-        # Scroll to the employee list for visibility
         employee_list = self.driver.find_element(*self.employee_list_table)
         self.driver.execute_script("arguments[0].scrollIntoView();", employee_list)
 
     def capture_employee_list(self):
-        """Extracts and verifies employee names from the Employee List."""
-        self.navigate_to_employee_list()  # Ensure page is loaded before extracting
-
+        self.navigate_to_employee_list()
         rows = WebDriverWait(self.driver, 30).until(EC.presence_of_all_elements_located(self.row_locator))
 
         if not rows:

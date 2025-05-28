@@ -7,11 +7,9 @@ class LogGen:
     def loggen():
         log_dir = "C:\\Users\\Ifomet\\Desktop\\PyCharmProjects\\OrangeHRM_Automation\\Logs"
 
-        # Ensure the directory exists
         if not os.path.exists(log_dir):
             os.makedirs(log_dir)
 
-        # Set up logging configuration
         logging.basicConfig(
             filename=os.path.join(log_dir, 'auto.log'),
             format='%(asctime)s: %(levelname)s: %(message)s',
