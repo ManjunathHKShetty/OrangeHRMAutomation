@@ -4,28 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd92f15d-0d1d-45ff-a516-c095d40426ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/OrangeHRM_Automation.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/constants/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/constants/constants.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pageObjectsModel/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pageObjectsModel/loginPage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pageObjectsModel/logoutPage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pageObjectsModel/pimPage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/common_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/common_verification.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/custom_logger.py" afterDir="false" />
+    <list default="true" id="cd92f15d-0d1d-45ff-a516-c095d40426ab" name="Changes" comment="First commit">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/locators/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/locators/loginLoc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/locators/logoutLoc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/locators/pimLoc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pageObjectsModel/loginPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObjectsModel/loginPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pageObjectsModel/logoutPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObjectsModel/logoutPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pageObjectsModel/pimPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObjectsModel/pimPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/common_verification.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,11 +31,17 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2xhiSGUdHpGi7NOOMM0M1TKJDtA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -54,7 +51,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Ifomet/Desktop/PyCharmProjects/WiseAutomation",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
@@ -80,6 +78,27 @@
       <option name="presentableId" value="Default" />
       <updated>1748396704189</updated>
     </task>
+    <task id="LOCAL-00001" summary="First commit">
+      <option name="closed" value="true" />
+      <created>1748448489565</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1748448489565</updated>
+    </task>
+    <task id="LOCAL-00002" summary="First commit">
+      <option name="closed" value="true" />
+      <created>1748449292941</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748449292941</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
   </component>
 </project>
